@@ -45,6 +45,7 @@ var promptForMove = () => {
       rollCredits()
     }
     //print board
+    console.log('my turn')
     console.log(board)
     //check for winner
     gameOver = checkForWinner()
@@ -75,11 +76,14 @@ var checkAndPlay = (row, col, player) => {
 }
 
 var checkForWinner = () => {
+  //if all of each row, all of each col, or diaganls have all x or all o
+  //return winner letter
+  //else 
   return false
 }
 
-var rollCredits = () => {
-
+var rollCredits = (winner) => {
+  console.log(winner, ' wins! Thanks for playing.')
 }
 
 initialize()
